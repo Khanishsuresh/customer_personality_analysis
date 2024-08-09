@@ -1,0 +1,16 @@
+import pandas as pd
+
+def load_data():
+    url = 'https://raw.githubusercontent.com/amankharwal/Website-data/master/marketing_campaign.csv'
+    df = pd.read_csv(url)
+    return df
+
+
+def save_data(df):
+    df.to_csv('data/marketing_campaign.csv', index=False)
+
+
+if __name__ == '__main__':
+    df = load_data()
+    save_data(df)
+    print('Data saved to marketing_campaign.csv')
