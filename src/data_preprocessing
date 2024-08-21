@@ -13,4 +13,4 @@ def save_data(df):
 if __name__ == '__main__':
     df = load_data()
     save_data(df)
-    print('Data saved to marketing_campaign.csv')
+    print('Data saved to data as marketing_campaign.csv')
